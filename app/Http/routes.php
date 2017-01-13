@@ -28,3 +28,6 @@ Route::get('downloads/latest', 'DownloadsController@showLatest');
 Route::get('downloads/latest/{identifier}', 'DownloadsController@showLatest');
 Route::get('downloads/{identifier}/latest', 'DownloadsController@showLatest');
 Route::get('downloads/{gitBranch}/{gitHashShort}', 'DownloadsController@show');
+
+Route::get('content', 'ContentController@index');
+Route::get('content/cat/{category}', 'ContentController@category');
